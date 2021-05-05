@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>This is Custom Login Page</title>
+</head>
+<body>
+
+	<section>
+			<div id="login">
+        
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" style="height : 350px;" class="col-md-12">
+                    
+                    <!-- email from -->
+                    
+                   <div class="alert alert-success" role="alert">OTP has been sent successfully on your email</div>
+                    
+                    <form method="post" action="" th:href="@{/send-otp}">
+                    	
+                    	<div class="form-group mt-3">
+                    	
+                    	 <input name="otp" required type="text" placeholder="Enter OTP here" class="form-control mt-5"/>
+                    	
+                    	</div>
+                    	
+                    	<div class="container text-center mt-5">
+                    			
+                    			<button class="btn btn-success bt-lg">Verify OTP</button>	
+                    	
+                    	</div>
+                    
+                    </form>
+                    
+				</div>
+                </div>
+            </div>
+        </div>
+    </div>
+		</section>
+	
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org" 
+				th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>This is Home Page</title>
+</head>
+<body>
+
+	<section>
+	
+			
+			<div class="container">
+			
+			<div class="card">
+			
+			<div class="card-body my-5">
+			<div class="container text-center">
+			
+			<img src="" style="height: 200px; width: 200px;" class="my_profile_picture" th:src="@{/img/default.png}" alt="profile photo" />
+			
+			</div>
+			<div class="container text-center mt-5">
+			<a th:href="@{/user/add-contact}" class="btn btn-primary btn-block text-uppercase">Add New Contact</a>
+			</div>
+			<div class="my_card mt-5">
+					<div class="card text-center" style="width: 72rem;">
+  						<img class="card-img-top" th:src="@{/img/c3.png}" alt="Card image cap">
+  								<div class="card-body">
+    							<h5 class="card-title">Smart Contact Manager</h5>
+    								<p class="card-text">Start Adding Your Contacts on Cloud</p>
+    									<a href="#" th:href="@{/signup}" class="btn btn-primary">Click Me</a>
+  							</div>
+					</div>
+			
+			</div>
+			
+			
+			<div class="my_card">
+					<div class="card text-center" style="width: 72rem;">
+  						<img class="card-img-top" th:src="@{/img/services.png}" alt="Card image cap">
+  								<div class="card-body">
+    							<h5 class="card-title">Explore Services Of Smart Contact Manager</h5>
+    								<p class="card-text">Start Adding Your Contacts</p>
+    									<a href="#" class="btn btn-primary">Click Here</a>
+  							</div>
+					</div>
+			
+			</div>
+			
+			
+			
+			<div class="my_card">
+					<div class="card text-center" style="width: 72rem;">
+  						<img class="card-img-top" th:src="@{/img/tandc.png}" alt="Card image cap">
+  								<div class="card-body">
+    							<h5 class="card-title">Terms & Conditions Smart Contact Manager</h5>
+    								<p class="card-text">Read Carefully</p>
+    									<a href="#" class="btn btn-primary">Go To T&C</a>
+  							</div>
+					</div>
+			
+			</div>
+			
+
+
+			</div>
+			</div>
+			</div>
+			
+			
+			
+	</section>	
+	
+</body>
+</html>
